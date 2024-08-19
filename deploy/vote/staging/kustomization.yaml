@@ -25,3 +25,7 @@ labels:
   pairs:
     env: staging
     project: instavote
+
+configMapGenerator:
+  - name: vote-options
+    env: options.env
