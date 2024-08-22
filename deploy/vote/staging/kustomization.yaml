@@ -13,7 +13,7 @@ patches:
 images:
 - name: schoolofdevops/vote
   newName: schoolofdevops/vote
-  newTag: v6
+  newTag: v5
 
 namespace: instavote
 
