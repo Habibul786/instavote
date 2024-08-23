@@ -4,7 +4,7 @@ resources:
 - ../base
 
 replicas:
-- count: 2
+- count: 6
   name: vote
 patches:
 - path: deployment.yaml
