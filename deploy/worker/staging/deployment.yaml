@@ -13,5 +13,5 @@ spec:
       $setElementOrder/containers:
       - name: worker
       containers:
-      - image: schoolofdevops/vote:v3
+      - image: schoolofdevops/worker:v3
         name: worker
