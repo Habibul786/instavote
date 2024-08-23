@@ -15,7 +15,3 @@ spec:
       containers:
       - image: schoolofdevops/vote:v3
         name: worker
-        envFrom:
-          - configMapRef:
-              name: vote-options
-              optional: true
