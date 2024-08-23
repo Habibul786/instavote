@@ -21,6 +21,6 @@ spec:
         tier: front
     spec:
       containers:
-      - image: schoolofdevops/worker:v5
+      - image: schoolofdevops/vote:v9
         name: worker
         resources: {}
