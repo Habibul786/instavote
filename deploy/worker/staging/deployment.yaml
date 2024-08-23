@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     app: worker
     tier: front
@@ -10,8 +9,6 @@ spec:
   replicas: 5
   template:
     spec:
-      $setElementOrder/containers:
-      - name: worker
       containers:
       - image: schoolofdevops/worker:v3
         name: worker

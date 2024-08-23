@@ -3,11 +3,12 @@ kind: Kustomization
 resources:
 - ../base
 
+namespace: instavote
+
 patches:
-- path: deployment.yaml
+  #- path: deployment.yaml
 - path: service.yaml
 
 
-namespace: instavote
 
 
