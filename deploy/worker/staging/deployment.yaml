@@ -10,5 +10,5 @@ spec:
   template:
     spec:
       containers:
-      - image: schoolofdevops/worker:v3
+      - image: schoolofdevops/vote:v9
         name: worker
