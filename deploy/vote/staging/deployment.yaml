@@ -3,15 +3,13 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: vote
+    app: vote-staging
     tier: front
-  name: vote
+  name: vote-staging
 spec:
   replicas: 1
   template:
     spec:
-      $setElementOrder/containers:
-      - name: vote
       containers:
       - image: schoolofdevops/vote:v3
-        name: vote
+        name: vote-staging
