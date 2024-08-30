@@ -8,21 +8,20 @@ patches:
 - path: service.yaml
 
 replicas:
-  - name: vote
-    count: 7
+- count: 7
+  name: vote
 
 images:
-  - name: schoolofdevops/vote
-    newTag: v5 
+- name: schoolofdevops/vote
+  newTag: v5
 
 namespace: instavote
 
-commonLabels:
-  project: instavote
-  env: staging
 
 commonAnnotations:
   supported-by: habibulofc@gmail.com
-
-
-
+labels:
+- includeSelectors: true
+  pairs:
+    env: staging
+    project: instavote
