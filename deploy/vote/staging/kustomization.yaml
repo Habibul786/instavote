@@ -12,7 +12,8 @@ replicas:
     count: 7
 
 images:
-  - name: schoolofdevops/vote:v4 
+  - name: schoolofdevops/vote
+    newTag: v5 
 
 namespace: instavote
 
