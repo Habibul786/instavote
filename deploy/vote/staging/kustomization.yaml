@@ -12,8 +12,8 @@ replicas:
     count: 7
 
 images:
-  - name: schoolofdevops/vote
-    newTag: v8 # {"$imagepolicy": "flux-system:vote-policy:tag"}
+  - name: habibul786/vote
+    newTag: main-9332ae50-1724853974 # {"$imagepolicy": "flux-system:vote-policy:tag"}
 
 namespace: instavote
 
