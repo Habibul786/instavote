@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: vote-staging
     tier: front
   name: vote-staging
 spec:
