@@ -3,12 +3,13 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
+    app: vote
     tier: front
-  name: vote-staging
+  name: vote
 spec:
-  replicas: 1
+  replicas: 2
   template:
     spec:
       containers:
       - image: schoolofdevops/vote:v3
-        name: vote-staging
+        name: vote
