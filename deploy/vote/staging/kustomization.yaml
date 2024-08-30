@@ -3,7 +3,26 @@ kind: Kustomization
 resources:
 - ../base
 
-patches:
+patchesStrategicMerge:
 - path: deployment.yaml
 - path: service.yaml
+
+replicas:
+  - name: vote
+    count: 7
+
+images:
+  - name: schoolofdevops/vote
+    newTag: v8 # {"$imagepolicy": "flux-system:vote-policy:tag"}
+
+namespace: instavote
+
+commonLabels:
+  project: instavote
+  env: staging
+
+commonAnnotations:
+  supported-by: habibulofc@gmail.com
+
+
 
