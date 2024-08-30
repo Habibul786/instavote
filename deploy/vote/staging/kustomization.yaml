@@ -9,19 +9,3 @@ patches:
 
 replicas:
 - count: 7
-  name: vote
-
-images:
-- name: schoolofdevops/vote
-  newTag: v5
-
-namespace: instavote
-
-
-commonAnnotations:
-  supported-by: habibulofc@gmail.com
-labels:
-- includeSelectors: true
-  pairs:
-    env: staging
-    project: instavote
