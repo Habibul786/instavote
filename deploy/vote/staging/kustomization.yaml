@@ -13,7 +13,11 @@ replicas:
 
 images:
   - name: habibul786/vote
+<<<<<<< HEAD
     newTag: v8 # {"$imagepolicy": "flux-system:vote-policy:tag"}
+=======
+    newTag: main-9332ae50-1724853974 # {"$imagepolicy": "flux-system:vote-policy:tag"}
+>>>>>>> 9ec92e2ff2248ed264f33d53c66dea09914d4f2a
 
 namespace: instavote
 
