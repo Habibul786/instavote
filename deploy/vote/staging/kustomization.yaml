@@ -12,5 +12,6 @@ patches:
 - path: service.yaml
 
 images:
-- name: habibul786/vote
+- name: schoolofdevops/vote
+  newName: habibul786/vote
   newTag: v8
