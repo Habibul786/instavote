@@ -3,9 +3,10 @@ kind: Kustomization
 resources:
 - ../base
 
-patches:
-- path: deployment.yaml
-- path: service.yaml
 
 replicas:
 - count: 7
+  name: vote
+patches:
+- path: deployment.yaml
+- path: service.yaml
