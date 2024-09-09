@@ -14,4 +14,4 @@ patches:
 images:
 - name: schoolofdevops/vote
   newName: habibul786/vote
-  newTag: v8
+  newTag: v8 # {"$imagepolicy": "flux-system:vote:tag"}
