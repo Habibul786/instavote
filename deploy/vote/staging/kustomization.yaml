@@ -10,3 +10,7 @@ replicas:
 patches:
 - path: deployment.yaml
 - path: service.yaml
+
+images:
+- name: schoolofdevops/vote
+  newTag: v8
